@@ -44,7 +44,7 @@ string getPass(string id, int M) {
 	std::vector<int> upper = split(AllowedConditionStrings[Upper], "-");
 	std::vector<int> allChars = split(AllowedConditionStrings[AllSymbols], "-");
 
-	for (int i = 1; i < M; i++) {
+	for (int i = 1; i <= M; i++) {
 		if (i >= 1 && i <= Q + 1) {
 			result += getRandomChar(lower);
 		}
